@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Birthday My Angel 💖</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #ffe4ec, #fff7f8);
-      text-align: center;
-      color: #333;
-    }
-
-    h1 {
-      margin-top: 50px;
-      font-size: 3em;
-      color: #ff4081;
-      font-weight: bold;
-    }
-
-    .gift-box {
-      <img id="flower-image" src="secret-flower.jpg" alt="Gift message" style="display:none; max-width: 90%; max-height: 90%; border-radius: 20px; box-shadow: 0 0 20px pink;">
-      cursor: pointer;
-      position: relative;
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-
-    .message {
-      display: none;
-      margin: 30px auto;
-      padding: 20px;
-      border: 5px dashed #ffb6c1;
-      border-radius: 15px;
-      width: 80%;
-      max-width: 600px;
-      font-size: 1.2em;
-      background: #fff0f5;
-    
-    .caption {
-      font-style: italic;
-      font-size: 1.1em;
-      margin-top: 20px;
-      color: #555;
-    }
-
-    iframe {
-      margin-top: 40px;
-      border: none;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 560px;
-      height: 315px;
-    }
-
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>My Angel's Birthday</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ffdde1, #ee9ca7);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ffb6c1;
+            padding: 30px;
+            font-size: 32px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin: 30px;
+            color: #333;
+        }
+        img.main-photo {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        iframe {
+            margin-top: 30px;
+            width: 90%;
+            max-width: 500px;
+            height: 280px;
+            border: none;
+            border-radius: 12px;
+        }
+        .gift-box {
+            margin-top: 40px;
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            background: url('https://i.imgur.com/U3vTGjX.png') no-repeat center/cover;
+            display: inline-block;
+        }
+        #flower-image {
+            display: none;
+            margin-top: 20px;
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 20px;
+            box-shadow: 0 0 20px pink;
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
+    <header>Happy Birthday, My Angel 🎂</header>
 
-  <h1>Happy Birthday My Angel 🎂</h1>
+    <section>
+        <h2>From: Your Bear 🧸</h2>
+        <p>
+            Wishing you a very happy birthday my princess 🥳😘…may all the happiness you desired for may all your expectations come to my life wether it be career, relationship, love, family or materialistic mayyy it all come to life my child …🥺…May the anxiety change to joy, the silent cries becomes loud happiness 🫂,you loving me becomes more..😴✋🏼…you minding me becomes more…😴✋🏼…you caring for me becomes more..😴✋🏼…
+        </p>
+        <p>
+            Wishing you a very happy birthday the woman of my dreams…💗😌 I’ll always keep that smile on your face…and I’ll miss you sm sm nu ahhh this earth and moon distance is less compared to how much I miss you…😞
+        </p>
+        <p><strong>From,<br>Your sad bear…😞🧸💗</strong></p>
+    </section>
 
-  <div class="gift-box" onclick="revealMessage()"></div>
+    <section>
+        <img src="0E6B1E89-D556-4BAF-8E90-BBA1D950A583.jpeg" class="main-photo" alt="Favorite Photo">
+        <div class="caption">This is myyy most fav photo don’t mind if I’m milking it everywhere cuz I love it sm…😭💗🤌🏼</div>
+    </section>
 
-  <div class="message" id="secretMessage">
-    <div class="flower-frame">
-      ❤️ “you always give me new reasons to smile about my bae.” ❤️<br><br>
-      May your smile always shine, my angel. You're the most precious part of my world.
+    <section>
+        <iframe src="https://www.youtube.com/embed/zsaff26T4Wg?si=1uIpdO5EOUa9AoE1" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <div class="gift-box" onclick="revealGift()"></div>
+        <img id="flower-image" src="secret-flower.jpg" alt="Gift message">
+    </section>
+
+    <div class="footer">
+        Made with love from your bear 💗
     </div>
-  </div>
 
-  <div class="caption">
-    📸 Favorite Memory: “This photo will be something that we show to our kids.”
-  </div>
-
-<iframe width="100%" height="315" 
-src="https://www.youtube.com/embed/zsaff26T4Wg?autoplay=1&loop=1&playlist=zsaff26T4Wg" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-allowfullscreen></iframe>
-  <div class="footer">
-    Made with love by Your Maman Bear 🐻 | 17 June 2025
-  </div>
-
-  <script>
-    function revealMessage() {
-      document.getElementById('secretMessage').style.display = 'block';
+    <script>
+        function revealGift() {
+            document.getElementById('flower-image').style.display = 'block';
     }
   </script>
 
