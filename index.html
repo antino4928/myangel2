@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday My Angel 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe4ec, #fff7f8);
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      color: #ff4081;
+      font-weight: bold;
+    }
+
+    .gift-box {
+      margin: 60px auto;
+      width: 150px;
+      height: 150px;
+      background: url('https://i.imgur.com/jPntNBR.jpg') no-repeat center/cover;
+      border: 3px solid #ff69b4;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .message {
+      display: none;
+      margin: 30px auto;
+      padding: 20px;
+      border: 5px dashed #ffb6c1;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 600px;
+      font-size: 1.2em;
+      background: #fff0f5;
+    }
+
+    .flower-frame {
+      border: 10px solid transparent;
+      border-image: url('https://i.imgur.com/w1UR8xa.jpg') 30 round;
+      padding: 20px;
+    }
+
+    .caption {
+      font-style: italic;
+      font-size: 1.1em;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    iframe {
+      margin-top: 40px;
+      border: none;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Birthday My Angel 🎂</h1>
+
+  <div class="gift-box" onclick="revealMessage()"></div>
+
+  <div class="message" id="secretMessage">
+    <div class="flower-frame">
+      ❤️ “you always give me new reasons to smile about my bae.” ❤️<br><br>
+      May your smile always shine, my angel. You're the most precious part of my world.
+    </div>
+  </div>
+
+  <div class="caption">
+    📸 Favorite Memory: “This photo will be something that we show to our kids.”
+  </div>
+
+  <iframe src="https://www.youtube.com/embed/Bey4XXJAqS8?autoplay=1&loop=1&playlist=Bey4XXJAqS8" allowfullscreen></iframe>
+
+  <div class="footer">
+    Made with love by Your Maman Bear 🐻 | 17 June 2025
+  </div>
+
+  <script>
+    function revealMessage() {
+      document.getElementById('secretMessage').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
