@@ -43,12 +43,18 @@
             border-radius: 12px;
         }
         .gift-box {
-            margin-top: 40px;
+            margin-top: 30px;
             cursor: pointer;
-            width: 150px;
-            height: 150px;
-            background: url('https://i.imgur.com/U3vTGjX.png') no-repeat center/cover;
+            width: 120px;
+            height: 120px;
+            background: url('https://i.imgur.com/oJNdq8R.gif') no-repeat center/cover;
             display: inline-block;
+            animation: float 2s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
         }
         #flower-image {
             display: none;
@@ -80,6 +86,12 @@
         <p><strong>From,<br>Your sad bear…😞🧸💗</strong></p>
     </section>
 
+    <!-- 🎁 GIFT BOX SECTION MOVED HERE -->
+    <section>
+        <div class="gift-box" onclick="revealGift()"></div>
+        <img id="flower-image" src="secret-flower.jpg" alt="Surprise Gift">
+    </section>
+
     <section>
         <img src="selfie.jpg" class="main-photo" alt="Favorite Photo">
         <div class="caption">
@@ -89,11 +101,6 @@
 
     <section>
         <iframe src="https://www.youtube.com/embed/zsaff26T4Wg?si=1uIpdO5EOUa9AoE1" allowfullscreen></iframe>
-    </section>
-
-    <section>
-        <div class="gift-box" onclick="revealGift()"></div>
-        <img id="flower-image" src="secret-flower.jpg" alt="Surprise Gift">
     </section>
 
     <div class="footer">
