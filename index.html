@@ -1,116 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Angel's Birthday</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(to right, #ffdde1, #ee9ca7);
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #ffb6c1;
-            padding: 30px;
-            font-size: 32px;
-            color: white;
-            font-weight: bold;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        section {
-            margin: 30px;
-            color: #333;
-        }
-        img.main-photo {
-            width: 80%;
-            max-width: 400px;
-            border-radius: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-        .caption {
-            margin-top: 10px;
-            font-style: italic;
-            color: #555;
-        }
-        iframe {
-            margin-top: 30px;
-            width: 90%;
-            max-width: 500px;
-            height: 280px;
-            border: none;
-            border-radius: 12px;
-        }
-        .gift-box {
-            margin: 20px auto 10px auto;
-            cursor: pointer;
-            width: 120px;
-            height: 120px;
-            background: url('https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif') no-repeat center/contain;
-            display: inline-block;
-            animation: float 2s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        #flower-image {
-            display: none;
-            margin-top: 20px;
-            max-width: 90%;
-            max-height: 90vh;
-            border-radius: 20px;
-            box-shadow: 0 0 20px pink;
-        }
-        .footer {
-            margin-top: 40px;
-            padding: 20px;
-            font-size: 14px;
-            color: #999;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>My Angel's Birthday</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      margin: 0; padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 30px;
+      font-size: 32px;
+      color: white;
+      font-weight: bold;
+    }
+    section { margin: 30px; color: #333; }
+    img.main-photo {
+      width: 80%; max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .caption {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
+    iframe {
+      margin-top: 30px;
+      width: 90%; max-width: 500px;
+      height: 280px;
+      border: none;
+      border-radius: 12px;
+    }
+    .gift-box {
+      margin: 20px auto;
+      width: 120px; height: 120px;
+      background: url('https://media.giphy.com/media/WoXUTUvNc4rI4/giphy.gif') no-repeat center/contain;
+      cursor: pointer;
+      animation: floatAnim 2s infinite ease-in-out;
+    }
+    @keyframes floatAnim {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    #flower-image {
+      display: none;
+      margin-top: 20px;
+      max-width: 90%; max-height: 90vh;
+      border-radius: 20px;
+      box-shadow: 0 0 20px pink;
+    }
+    .footer { margin-top: 40px; padding: 20px; color: #999; }
+  </style>
 </head>
 <body>
-    <header>Happy Birthday, My Angel 🎂</header>
+  <header>Happy Birthday, My Angel 🎂</header>
 
-    <section>
-        <h2>From: Your Bear 🧸</h2>
-        <p>
-            Wishing you a very happy birthday my princess 🥳😘…may all the happiness you desired for may all your expectations come to my life wether it be career, relationship, love, family or materialistic mayyy it all come to life my child …🥺…May the anxiety change to joy, the silent cries becomes loud happiness 🫂,you loving me becomes more..😴✋🏼…you minding me becomes more…😴✋🏼…you caring for me becomes more..😴✋🏼…
-        </p>
-        <p>
-            Wishing you a very happy birthday the woman of my dreams…💗😌 I’ll always keep that smile on your face…and I’ll miss you sm sm nu ahhh this earth and moon distance is less compared to how much I miss you…😞
-        </p>
-        <p><strong>From,<br>Your sad bear…😞🧸💗</strong></p>
-    </section>
+  <section>
+    <h2>From: Your Bear 🧸</h2>
+    <p>Your heartfelt message…</p>
+    <p><strong>From,<br>Your sad bear…😞🧸💗</strong></p>
+  </section>
 
-    <section>
-        <!-- Floating gift box above selfie -->
-        <div class="gift-box" onclick="revealGift()"></div>
-        <img id="flower-image" src="secret-flower.jpg" alt="Surprise Gift">
-    </section>
+  <section>
+    <div class="gift-box" onclick="revealGift()"></div>
+    <img id="flower-image" src="secret-flower.jpg" alt="Surprise Gift">
+  </section>
 
-    <section>
-        <img src="selfie.jpg" class="main-photo" alt="Favorite Photo">
-        <div class="caption">
-            This is myyy most fav photo don’t mind if I’m milking it everywhere cuz I love it sm…😭💗🤌🏼
-        </div>
-    </section>
-
-    <section>
-        <iframe src="https://www.youtube.com/embed/zsaff26T4Wg?si=1uIpdO5EOUa9AoE1" allowfullscreen></iframe>
-    </section>
-
-    <div class="footer">
-        Made with love from your bear 💗
+  <section>
+    <img src="selfie.jpg" class="main-photo" alt="Favorite Photo">
+    <div class="caption">
+      This is myyy most fav photo don’t mind if I’m milking it everywhere cuz I love it sm…😭💗🤌🏼
     </div>
+  </section>
 
-    <script>
-        function revealGift() {
-            document.getElementById('flower-image').style.display = 'block';
-        }
-    </script>
+  <section>
+    <iframe src="https://www.youtube.com/embed/zsaff26T4Wg?si=1uIpdO5EOUa9AoE1" allowfullscreen></iframe>
+  </section>
+
+  <div class="footer">Made with love from your bear 💗</div>
+
+  <script>
+    function revealGift() {
+      document.getElementById('flower-image').style.display = 'block';
+    }
+  </script>
 </body>
 </html>
